@@ -1,0 +1,486 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Quest | Destinations</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+
+
+
+
+<header>
+      <div class="logo">
+        <img src="../assets/images/logo/logo.png" alt=".Atlas Quest" />
+      </div>
+      <div class="nav-btns">
+        <nav class="nav-bar onDesktop">
+          <ul class="nav-list">
+            <li class="nav-item barBtn" onclick="displayBar()" class="active"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            <li class="nav-item hideEm" class="active"><a href="../index.html">Home</a></li>
+            <li class="nav-item hideEm" class="active">
+              <a href="../destination.html">Destinations</a>
+            </li>
+            <li class="nav-item hideEm" class="active"><a href="../booking.html">Booking</a></li>
+            <li class="nav-item hideEm" class="active"><a href="../about.html">About us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <nav class="nav-bar onPhone">
+      <ul class="nav-list phoneNav">
+        <li class="nav-item x-mark" onclick=hideBar() class="active"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+        <li class="nav-item" class="active"><a href="../index.html">Home</a></li>
+        <hr>
+        <li class="nav-item" class="active">
+          <a href="../destination.html">Destinations</a>
+        </li>
+        <hr>
+        <li class="nav-item" class="active"><a href="../booking.html">Booking</a></li>
+        <hr>
+        <li class="nav-item" class="active"><a href="../about.html">About us</a></li>
+        <hr>
+      </ul>
+    </nav>
+    <script>
+      function displayBar() {
+        const displayBar = document.querySelector(".barBtn");
+        displayBar.addEventListener('click', (e) => {
+          document.querySelector(".onPhone").style.display = "block"
+        })
+      }
+
+      function hideBar() {
+        const hideBar = document.querySelector(".x-mark");
+        hideBar.addEventListener('click', (e) => {
+          document.querySelector(".onPhone").style.display = "none"
+          document.querySelector(".nav-bar").style.display = "block"
+        })
+
+      }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+    <main>
+        <!-- HERO SECTION -->
+
+        <section class="destHero">
+            <h1>Destinations</h1>
+        </section>
+
+        <!-- Destination Body -->
+
+        <section class="destBody">
+            <section class="destHeading">
+                <div class="heading">
+                    <h1>Destination</h1>
+                </div>
+                <div class="descPara">
+                    <p>Explore the atlas through our various destination packages!</p>
+                </div>
+            </section>
+             <section class="destCards">
+
+                <!-- CARD 01 -->
+
+                <div class="card">
+                    <div class="heroImage">
+                        <img src="/assets/images/destination/africa.jpg" alt="">
+                    </div>
+                    <div class="destText">
+                        <div class="packName">
+                            <h2>Africa</h2>
+                        </div>
+                        <div class="packDesc">
+                            <p>"Experience Africa with our 10-day guided tour, including thrilling safaris, cultural excursions, luxury stays, and delicious local cuisine."</p>
+                        </div>
+                    </div>
+                    <div class="priceNbtn">
+                        <div class="price">
+                            <p><span class="colored">$2300</span></p>
+                        </div>
+                        <div class="btn">
+                            <a href="booking.html"><button>Book Now</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 02 -->
+
+                <div class="card">
+                    <div class="heroImage">
+                        <img src="/assets/images/destination/switzerland.jpg" alt="">
+                    </div>
+                    <div class="destText">
+                        <div class="packName">
+                            <h2>Switzerland</h2>
+                        </div>
+                        <div class="packDesc">
+                            <p>"Discover Switzerland on our 7-day tour with scenic train rides, alpine adventures, cozy stays, and visits to iconic cities like Zurich and Geneva."</p>
+                        </div>
+                    </div>
+                    <div class="priceNbtn">
+                        <div class="price">
+                            <p><span class="colored">$3300</span></p>
+                        </div>
+                        <div class="btn">
+                            <a href="booking.html"><button>Book Now</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 03 -->
+
+                <div class="card">
+                    <div class="heroImage">
+                        <img src="/assets/images/destination/china.jpg" alt="">
+                    </div>
+                    <div class="destText">
+                        <div class="packName">
+                            <h2>China</h2>
+                        </div>
+                        <div class="packDesc">
+                            <p>"Explore China on our 8-day tour featuring the Great Wall, Forbidden City, Terracotta Army, vibrant markets, and authentic Chinese cuisine."</p>
+                        </div>
+                    </div>
+                    <div class="priceNbtn">
+                        <div class="price">
+                            <p><span class="colored">$2000</span></p>
+                        </div>
+                        <div class="btn">
+                            <a href="booking.html"><button>Book Now</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 04 -->
+
+                <div class="card">
+                    <div class="heroImage">
+                        <img src="/assets/images/destination/greenland.jpg" alt="">
+                    </div>
+                    <div class="destText">
+                        <div class="packName">
+                            <h2>Green Land</h2>
+                        </div>
+                        <div class="packDesc">
+                            <p>"Experience Greenland on our 6-day tour with breathtaking ice fjords, northern lights, dog sledding adventures, and cozy Arctic lodges."</p>
+                        </div>
+                    </div>
+                    <div class="priceNbtn">
+                        <div class="price">
+                            <p><span class="colored">$2700</span></p>
+                        </div>
+                        <div class="btn">
+                            <a href="booking.html"><button>Book Now</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 05 -->
+
+                <div class="card">
+                    <div class="heroImage">
+                        <img src="/assets/images/destination/water 7.jpg" alt="">
+                    </div>
+                    <div class="destText">
+                        <div class="packName">
+                            <h2>Water 7</h2>
+                        </div>
+                        <div class="packDesc">
+                            <p>"Set sail on a 7-day Water 7 tour, exploring stunning water-themed attractions, picturesque canals, and unique coastal experiences."</p>
+                        </div>
+                    </div>
+                    <div class="priceNbtn">
+                        <div class="price">
+                            <p><span class="colored">$3800</span></p>
+                        </div>
+                        <div class="btn">
+                            <a href="booking.html"><button>Book Now</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 06 -->
+
+                <div class="card">
+                    <div class="heroImage">
+                        <img src="/assets/images/destination/dressrosa.jpg" alt="">
+                    </div>
+                    <div class="destText">
+                        <div class="packName">
+                            <h2>Dressrosa</h2>
+                        </div>
+                        <div class="packDesc">
+                            <p>"Join our 5-day Dresserossa tour, where you’ll explore vibrant markets, historic landmarks, and experience the colorful culture of this lively island."</p>
+                        </div>
+                    </div>
+                    <div class="priceNbtn">
+                        <div class="price">
+                            <p><span class="colored">$2300</span></p>
+                        </div>
+                        <div class="btn">
+                            <a href="booking.html"><button>Book Now</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 07 -->
+
+                <div class="card">
+                    <div class="heroImage">
+                        <img src="/assets/images/destination/wano.jpg" alt="">
+                    </div>
+                    <div class="destText">
+                        <div class="packName">
+                            <h2>The Kingdom Of Wano</h2>
+                        </div>
+                        <div class="packDesc">
+                            <p>"Explore the Kingdom of Wano on a 7-day adventure, featuring stunning landscapes, rich culture, and an exclusive meeting with Kaido, the Beast Pirate leader."</p>
+                        </div>
+                    </div>
+                    <div class="priceNbtn">
+                        <div class="price">
+                            <p><span class="colored">$1800</span></p>
+                        </div>
+                        <div class="btn">
+                            <a href="booking.html"><button>Book Now</button></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD 08 -->
+
+                <div class="card">
+                    <div class="heroImage">
+                        <img src="/assets/images/destination/arabasta.jpg" alt="">
+                    </div>
+                    <div class="destText">
+                        <div class="packName">
+                            <h2>Arabasta</h2>
+                        </div>
+                        <div class="packDesc">
+                            <p>"Discover the wonders of Alabasta on a 6-day tour, exploring ancient ruins, vibrant cities, and the desert's hidden gems."</p>
+                        </div>
+                    </div>
+                    <div class="priceNbtn">
+                        <div class="price">
+                            <p><span class="colored">$2300</span></p>
+                        </div>
+                        <div class="btn">
+                            <a href="booking.html"><button>Book Now</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 09 -->
+
+                <div class="card">
+                    <div class="heroImage">
+                        <img src="/assets/images/destination/germany.jpg" alt="">
+                    </div>
+                    <div class="destText">
+                        <div class="packName">
+                            <h2>Aldof Hitler</h2>
+                        </div>
+                        <div class="packDesc">
+                            <p>"Discover Germany in 5 days, exploring historic sites, charming cities, and rich cultural landmarks. Also get a chance to meet Aldof Hilter."</p>
+                        </div>
+                    </div>
+                    <div class="priceNbtn">
+                        <div class="price">
+                            <p><span class="colored">$2900</span></p>
+                        </div>
+                        <div class="btn">
+                            <a href="booking.html"><button>Book Now</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 10 -->
+
+                <div class="card">
+                    <div class="heroImage">
+                        <img src="/assets/images/destination/pakistan.jpg" alt="">
+                    </div>
+                    <div class="destText">
+                        <div class="packName">
+                            <h2>Pakistan</h2>
+                        </div>
+                        <div class="packDesc">
+                            <p>"Experience Pakistan on a 9-day tour, exploring vibrant cities, breathtaking landscapes, historical sites, and rich cultural heritage."</p>
+                        </div>
+                    </div>
+                    <div class="priceNbtn">
+                        <div class="price">
+                            <p><span class="colored">$2000</span></p>
+                        </div>
+                        <div class="btn">
+                            <a href="booking.html"><button>Book Now</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 11 -->
+
+                <div class="card">
+                    <div class="heroImage">
+                        <img src="/assets/images/destination/canada.jpg" alt="">
+                    </div>
+                    <div class="destText">
+                        <div class="packName">
+                            <h2>Canada</h2>
+                        </div>
+                        <div class="packDesc">
+                            <p>"Discover Canada on a 10-day tour, featuring stunning natural wonders, vibrant cities like Toronto and Vancouver, and unforgettable outdoor adventures."</p>
+                        </div>
+                    </div>
+                    <div class="priceNbtn">
+                        <div class="price">
+                            <p><span class="colored">$2000</span></p>
+                        </div>
+                        <div class="btn">
+                            <a href="booking.html"><button>Book Now</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 12 -->
+
+                <div class="card">
+                    <div class="heroImage">
+                        <img src="/assets/images/destination/kashmir.jpg" alt="">
+                    </div>
+                    <div class="destText">
+                        <div class="packName">
+                            <h2>Kashmir</h2>
+                        </div>
+                        <div class="packDesc">
+                            <p>"Experience the beauty of Kashmir on a 7-day tour, exploring serene landscapes, charming valleys, vibrant gardens, and the rich cultural heritage of the region."</p>
+                        </div>
+                    </div>
+                    <div class="priceNbtn">
+                        <div class="price">
+                            <p><span class="colored">$1800</span></p>
+                        </div>
+                        <div class="btn">
+                            <a href="booking.html"><button>Book Now</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 13 -->
+
+                <div class="card">
+                    <div class="heroImage">
+                        <img src="/assets/images/destination/karachi.jpg" alt="">
+                    </div>
+                    <div class="destText">
+                        <div class="packName">
+                            <h2>Karachi</h2>
+                        </div>
+                        <div class="packDesc">
+                            <p>"Explore Karachi on a 5-day tour, visiting iconic landmarks, bustling markets, beautiful beaches, and experiencing the city's vibrant culture and cuisine."</p>
+                        </div>
+                    </div>
+                    <div class="priceNbtn">
+                        <div class="price">
+                            <p><span class="colored">$1800</span></p>
+                        </div>
+                        <div class="btn">
+                            <a href="booking.html"><button>Book Now</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 14 -->
+
+                <div class="card">
+                    <div class="heroImage">
+                        <img src="/assets/images/destination/wholecake.jpg" alt="">
+                    </div>
+                    <div class="destText">
+                        <div class="packName">
+                            <h2>Whole Cake Island</h2>
+                        </div>
+                        <div class="packDesc">
+                            <p>"Embark on a 6-day tour of Whole Cake Island, exploring its vibrant candy-filled landscapes, meeting iconic characters, and experiencing the sweet adventures of the island."</p>
+                        </div>
+                    </div>
+                    <div class="priceNbtn">
+                        <div class="price">
+                            <p><span class="colored">$2600</span></p>
+                        </div>
+                        <div class="btn">
+                            <a href="booking.html"><button>Book Now</button></a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <div class="links">
+    
+            <div class="left">
+                <h1>Quick Links</h1>
+                <ul class="quickNav">
+                    <li class="qck-item"><a href="../index.html">Home</a></li>
+                    <li class="qck-item"><a href="../destination.html">Destinations</a></li>
+                    <li class="qck-item"><a href="../booking.html">Booking</a></li>
+                    <li class="qck-item"><a href="../about.html">About us</a></li>
+                </ul>
+            </div>
+            <div class="mid">
+                <h1>Contact us via</h1>
+                <ul class="contact-links">
+                    <li class="link-item"><a href="https://wa.me/923421234567"> +92 342 1234567</a></li>
+                    <li class="link-item"><a href="https://wa.me/923216789034"> +92 321 6789034</a></li>
+                    <li class="link-item"><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDZPKppBKtskkJBPrNcXNfJnpdWZZgpmHHHcVkNZmCSMKshtlmJCxWZwDChLbMcffCMmsWM"> customersupport@gmail.atlasquest.com</a></li>
+                    <li class="link-item"><a href="https://maps.app.goo.gl/Yom8m6MFWmpChZ6TA"> Atlas Quest Main Office, Saddar, Karachi</a></li>
+                </ul>
+            </div>
+            <div class="right">
+            <h1>Find us on</h1>
+            <ul class="social-media">
+                <li class="social-item"><a href="https://www.facebook.com/atlasquest">Faceboook</a></li>
+                <li class="social-item"><a href="https://www.instagram.com/zoro_iftikhar/">Instagram</a></li>
+                <li class="social-item"><a href="https://twitter.com/atlasquest">Twitter</a></li>
+                <li class="social-item"><a href="https://linkedin.com/in/atlasquest">Linked In</a></li>
+            </ul>
+        </div>
+    </div>
+        <hr>
+    <div class="bottom">
+        <p>&copy;<span class="colored">Atlas Quest!</span> All rights reserved. Made by <span class="colored">Iftikhar Ahmed</span>. Since 2024</p>
+    </div>
+    </footer>
+    
+</body>
+</html>

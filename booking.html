@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Quest | Booking</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+
+
+
+
+
+<header>
+      <div class="logo">
+        <img src="../assets/images/logo/logo.png" alt=".Atlas Quest" />
+      </div>
+      <div class="nav-btns">
+        <nav class="nav-bar onDesktop">
+          <ul class="nav-list">
+            <li class="nav-item barBtn" onclick="displayBar()" class="active"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            <li class="nav-item hideEm" class="active"><a href="../index.html">Home</a></li>
+            <li class="nav-item hideEm" class="active">
+              <a href="../destination.html">Destinations</a>
+            </li>
+            <li class="nav-item hideEm" class="active"><a href="../booking.html">Booking</a></li>
+            <li class="nav-item hideEm" class="active"><a href="../about.html">About us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <nav class="nav-bar onPhone">
+      <ul class="nav-list phoneNav">
+        <li class="nav-item x-mark" onclick=hideBar() class="active"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+        <li class="nav-item" class="active"><a href="../index.html">Home</a></li>
+        <hr>
+        <li class="nav-item" class="active">
+          <a href="../destination.html">Destinations</a>
+        </li>
+        <hr>
+        <li class="nav-item" class="active"><a href="../booking.html">Booking</a></li>
+        <hr>
+        <li class="nav-item" class="active"><a href="../about.html">About us</a></li>
+        <hr>
+      </ul>
+    </nav>
+    <script>
+      function displayBar() {
+        const displayBar = document.querySelector(".barBtn");
+        displayBar.addEventListener('click', (e) => {
+          document.querySelector(".onPhone").style.display = "block"
+        })
+      }
+
+      function hideBar() {
+        const hideBar = document.querySelector(".x-mark");
+        hideBar.addEventListener('click', (e) => {
+          document.querySelector(".onPhone").style.display = "none"
+          document.querySelector(".nav-bar").style.display = "block"
+        })
+
+      }
+    </script>
+
+
+
+
+
+
+
+
+
+
+    <main>
+        <section class="hero bookingHero">
+            <h1>Book Your Tour!</h1>
+            <p>It will be our pleasure to travel with you!</p>
+        </section>
+        <section class="bookHeading">
+            <h1>Book Your Tour On a Reasonable Price!</h1>
+        </section>
+        <section class="form">
+            <form action="">
+                <div class="firstLine">
+                    <div class="fName">
+                        <label for="fName">First Name<span class="colored">*</span>: </label><br>
+                        <input type="text" id="fName" required>
+                    </div>
+                    <div class="lName">
+                        <label for="lName">Last Name<span class="colored">*</span>: </label><br>
+                        <input type="text" id="lName" required>
+                    </div>
+                </div>
+                <div class="email">
+                    <label for="email">Email<span class="colored">*</span>: </label><br>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="guestNdestNprice">
+                    <div class="numberOfGuests">
+                        <label for="guest">Number of Guests<span class="colored">*</span>: </label><br>
+                        <input type="number" id="guest" min="1" max="20" value="1" required>
+                    </div>
+
+                    <div class="location">
+                        <label for="dest">Destination<span class="colored">*</span>: </label><br>
+                        <select name="dest" id="dest">
+                            <option value="" selected></option>
+                            <option value="africa">Africa</option>
+                            <option value="pakistan">Pakistan</option>
+                            <option value="china">China</option>
+                            <option value="karachi">Karachi</option>
+                            <option value="kashmir">Kashmir</option>
+                            <option value="canada">Canada</option>
+                            <option value="germany">Germany</option>
+                            <option value="water7">Water 7</option>
+                            <option value="dressrosa">Dressrosa</option>
+                            <option value="wholeCakeIsland">Whole Cake Island</option>
+                            <option value="japan">Kingdom of Wano</option>
+                            <option value="switzerland">Switzerland</option>
+                        <option value="arabasta">Arabasta</option>
+                        <option value="greenland">Greenland</option>
+                    </select>
+                    
+                </div>
+                <div class="price">
+                    <label for="date">Date<span class="colored">*</span>: </label><br>
+                    <input type="date" name="date" id="date" required>
+                </div>
+            </div>
+            <div class="btn">
+                <a href="#bookingDetails"><button onclick=displayBooked()>Book Now</button></a>
+            </div>
+            </form>
+        </section>
+        <section class="bookingDetails" id="bookingDetails">
+            
+        </section>
+    </main>
+    
+
+
+    <footer>
+      <div class="links">
+  
+          <div class="left">
+              <h1>Quick Links</h1>
+              <ul class="quickNav">
+                  <li class="qck-item"><a href="../index.html">Home</a></li>
+                  <li class="qck-item"><a href="../destination.html">Destinations</a></li>
+                  <li class="qck-item"><a href="../booking.html">Booking</a></li>
+                  <li class="qck-item"><a href="../about.html">About us</a></li>
+              </ul>
+          </div>
+          <div class="mid">
+              <h1>Contact us via</h1>
+              <ul class="contact-links">
+                  <li class="link-item"><a href="https://wa.me/923421234567"> +92 342 1234567</a></li>
+                  <li class="link-item"><a href="https://wa.me/923216789034"> +92 321 6789034</a></li>
+                  <li class="link-item"><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDZPKppBKtskkJBPrNcXNfJnpdWZZgpmHHHcVkNZmCSMKshtlmJCxWZwDChLbMcffCMmsWM"> customersupport@gmail.atlasquest.com</a></li>
+                  <li class="link-item"><a href="https://maps.app.goo.gl/Yom8m6MFWmpChZ6TA"> Atlas Quest Main Office, Saddar, Karachi</a></li>
+              </ul>
+          </div>
+          <div class="right">
+          <h1>Find us on</h1>
+          <ul class="social-media">
+              <li class="social-item"><a href="https://www.facebook.com/atlasquest">Faceboook</a></li>
+              <li class="social-item"><a href="https://www.instagram.com/zoro_iftikhar/">Instagram</a></li>
+              <li class="social-item"><a href="https://twitter.com/atlasquest">Twitter</a></li>
+              <li class="social-item"><a href="https://linkedin.com/in/atlasquest">Linked In</a></li>
+          </ul>
+      </div>
+  </div>
+      <hr>
+  <div class="bottom">
+      <p>&copy;<span class="colored">Atlas Quest!</span> All rights reserved. Made by <a href="../admin/login.html">Iftikhar & Bros</a>. Since 2024</p>
+  </div>
+  </footer>
+  
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>

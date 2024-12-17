@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atlas Quest | Home Page</title>
+  </head>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/responsive.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <body>
+    
+
+  <header>
+      <div class="logo">
+        <img src="../assets/images/logo/logo.png" alt=".Atlas Quest" />
+      </div>
+      <div class="nav-btns">
+        <nav class="nav-bar onDesktop">
+          <ul class="nav-list">
+            <li class="nav-item barBtn" onclick="displayBar()" class="active"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            <li class="nav-item hideEm" class="active"><a href="../index.html">Home</a></li>
+            <li class="nav-item hideEm" class="active">
+              <a href="../destination.html">Destinations</a>
+            </li>
+            <li class="nav-item hideEm" class="active"><a href="../booking.html">Booking</a></li>
+            <li class="nav-item hideEm" class="active"><a href="../about.html">About us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <nav class="nav-bar onPhone">
+      <ul class="nav-list phoneNav">
+        <li class="nav-item x-mark" onclick=hideBar() class="active"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+        <li class="nav-item" class="active"><a href="../index.html">Home</a></li>
+        <hr>
+        <li class="nav-item" class="active">
+          <a href="../destination.html">Destinations</a>
+        </li>
+        <hr>
+        <li class="nav-item" class="active"><a href="../booking.html">Booking</a></li>
+        <hr>
+        <li class="nav-item" class="active"><a href="../about.html">About us</a></li>
+        <hr>
+      </ul>
+    </nav>
+    <script>
+      function displayBar() {
+        const displayBar = document.querySelector(".barBtn");
+        displayBar.addEventListener('click', (e) => {
+          document.querySelector(".onPhone").style.display = "block"
+        })
+      }
+
+      function hideBar() {
+        const hideBar = document.querySelector(".x-mark");
+        hideBar.addEventListener('click', (e) => {
+          document.querySelector(".onPhone").style.display = "none"
+          document.querySelector(".nav-bar").style.display = "block"
+        })
+
+      }
+    </script>
+
+
+
+
+
+
+
+    <main>
+      <!-- Hero Section -->
+
+      <section class="hero">
+        <div class="heroPrntDiv">
+          <div class="heroDesc">
+            <h1>Welcome to Atlas Quest</h1>
+            <p>Experience the world's most incredible destinations</p>
+            <a href="destination.html"><button>Discover Now</button></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="ServiceHighlght">
+        <div class="serviesDisp">
+          <h2>Services</h2>
+          <ul class="servicesList">
+            <li>
+              <img
+                src="/assets/images/services/service 1.png"
+                alt="Service 1"
+              />
+              <p>Adventure</p>
+            </li>
+            <li>
+              <img
+                src="/assets/images/services/service 2.png"
+                alt="Service 2"
+              />
+              <p>Tour Guide</p>
+            </li>
+            <li>
+              <img
+                src="/assets/images/services/service 3.png"
+                alt="Service 3"
+              />
+              <p>Trekking</p>
+            </li>
+            <li>
+              <img
+                src="/assets/images/services/service 4.png"
+                alt="Service 4"
+              />
+              <p>Camp Fire</p>
+            </li>
+            <li>
+              <img
+                src="/assets/images/services/service 5.png"
+                alt="Service 5"
+              />
+              <p>Off Road</p>
+            </li>
+            <li>
+              <img
+                src="/assets/images/services/service 6.png"
+                alt="Service 6"
+              />
+              <p>Camping</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="aboutSec">
+        <div class="AboutHero">
+          <img src="/assets/images/hero/aboutHero.jpg" alt="" />
+        </div>
+        <div class="aboutText">
+          <h1>About us</h1>
+          <p>
+            At <span class="colored">Atlas Quest</span>, we turn travel dreams
+            into reality. Whether it’s a family vacation, romantic escape, or
+            solo adventure, we specialize in crafting personalized journeys with
+            exclusive deals and expert support. Let us guide you to
+            unforgettable destinations and seamless experiences. Your adventure
+            starts here!
+          </p>
+          <a href="about.html"><button>Learn More</button></a>
+        </div>
+      </section>
+
+      <!-- Offers Section -->
+      <section class="offerSec">
+        <div class="OffersHead">
+          <h1>Offers For You!</h1>
+        </div>
+        <div class="offerImages">
+          <!-- Offer 1 -->
+
+          <div class="offer">
+            <div class="image">
+              <img src="/assets/images/offers/family hangout.jpg" alt="" />
+            </div>
+            <div class="desc">
+              <h2>Family Pack</h2>
+              <p>Book your adventure now with our exclusive offers!</p>
+              <a href="#"><button>Book Now</button></a>
+            </div>
+          </div>
+
+          <!-- Offer 2 -->
+
+          <div class="offer">
+            <div class="image">
+              <img
+                class="img1"
+                src="/assets/images/offers/friends hangout.jpg"
+                alt=""
+              />
+            </div>
+            <div class="desc">
+              <h2>Firend Hangout</h2>
+              <p>Enjoy your movements with friends and us!</p>
+              <a href="#"><button>Book Now</button></a>
+            </div>
+          </div>
+
+          <!-- Offer 3 -->
+
+          <div class="offer">
+            <div class="image">
+              <img
+                class="img1"
+                src="/assets/images/offers/20% off.jpg"
+                alt=""
+              />
+            </div>
+            <div class="desc">
+              <h2>Get 20% OFF</h2>
+              <p>
+                Book your tour between 25 Dec 2024 to 5 Jan 2025 To get 20% Off
+                on every package!
+              </p>
+              <a href="#"><button>Book Now</button></a>
+            </div>
+          </div>
+
+          <!-- Offer 4 -->
+
+          <div class="offer">
+            <div class="image">
+              <img
+                class="img1"
+                src="/assets/images/offers/Honeymoon Offer.jpg"
+                alt=""
+              />
+            </div>
+            <div class="desc">
+              <h2>Honeymoon Offer</h2>
+              <p>
+                Enjoy your beautiful new marriage with your beautiful partner
+                with us!
+              </p>
+              <a href="#"><button>Book Now</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Newsletters -->
+
+      <section class="newsSec">
+        <div class="newsInnerDiv">
+          <div class="Text">
+            <h1>Subscribe to Newsletters</h1>
+            <p>
+              Become a member of our organization by subscribing newsletter and
+              get updates on every new package out here.
+            </p>
+          </div>
+          <div class="form">
+            <input type="email" placeholder="Enter your email" />
+            <button type="submit">Subscribe</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews -->
+
+      <section class="reviewSec" >
+        <div class="reviewHead">
+          <h1>Customer Reviews!</h1>
+        </div>
+        
+        <div class="reviewCards">
+          <ul class="revCards">
+            <!-- Review 1 -->
+
+            <li class="revCard">
+              <div class="intro">
+                <div class="image">
+                  <img
+                    src="assets/images/profile/Haris Khan.jpg"
+                    alt="Haris Khan"
+                  />
+                </div>
+                <div class="desc">
+                  <h3>Haris Khan</h3>
+                  <p>Pakistan</p>
+                  <p>
+                    4.2/5
+                    <span class="colored"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                  </p>
+                </div>
+              </div>
+              <div class="review">
+                <p>
+                  Atlas Quest is an exceptional travel planner that made my trip
+                  seamless and stress-free. Their user-friendly interface and
+                  excellent customer support exceeded my expectations. I'm
+                  giving 4.2 stars for their outstanding services and will
+                  definitely use them again! - Haris Khan
+                </p>
+              </div>
+            </li>
+
+            <!-- Review 2 -->
+
+            <li class="revCard">
+              <div class="intro">
+                <div class="image">
+                  <img
+                    src="assets/images/profile/Hinata Tachibana.png"
+                    alt="Hinata Tachibana"
+                  />
+                </div>
+                <div class="desc">
+                  <h3>Hinata Tachibana</h3>
+                  <p>Japan</p>
+                  <p>
+                    4.7/5
+                    <span class="colored"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                  </p>
+                </div>
+              </div>
+              <div class="review">
+                <p>
+                  Atlas Quest turned my travel dreams into reality with their
+                  amazing planning tools and personalized recommendations. Their
+                  attention to detail and quick support impressed me a lot. I'm
+                  rating them 4.7 stars for their fantastic service! - Hinata
+                  Tachibana
+                </p>
+              </div>
+            </li>
+
+            <!-- Review 3 -->
+
+            <li class="revCard">
+              <div class="intro">
+                <div class="image">
+                  <img
+                    src="assets/images/profile/Julia Anthony.png"
+                    alt="Julia Anthony"
+                  />
+                </div>
+                <div class="desc">
+                  <h3>Julia Anthony</h3>
+                  <p>Germany</p>
+                  <p>
+                    3.8/5
+                    <span class="colored"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                  </p>
+                </div>
+              </div>
+              <div class="review">
+                <p>
+                  Atlas Quest made planning my vacation effortless and
+                  enjoyable! Their detailed itineraries and customized
+                  suggestions truly enhanced my travel experience. I'm thrilled
+                  to give them a 3.7 star rating for their outstanding service.
+                  - Julia Anthony
+                </p>
+              </div>
+            </li>
+
+            <!-- Review 4 -->
+
+            <li class="revCard">
+              <div class="intro">
+                <div class="image">
+                  <img
+                    src="assets/images/profile/Huzaifa Ahmed.png"
+                    alt="Huzaifa Ahmed"
+                  />
+                </div>
+                <div class="desc">
+                  <h3>Huzaifa Ahmed</h3>
+                  <p>Pakistan</p>
+                  <p>
+                    4.0/5
+                    <span class="colored"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                  </p>
+                </div>
+              </div>
+              <div class="review">
+                <p>
+                  Atlas Quest provided a great travel planning experience with
+                  well-organized options and helpful support. While everything
+                  was smooth, there's always room for small improvements. I'm
+                  happy to give them a solid 4.0-star rating for their services!
+                  - Huzaifa Ahmed
+                </p>
+              </div>
+            </li>
+
+            <!-- Review 5 -->
+
+            <li class="revCard">
+              <div class="intro">
+                <div class="image">
+                  <img
+                    src="assets/images/profile/Malik Shoiab.png"
+                    alt="Malik Shoiab"
+                  />
+                </div>
+                <div class="desc">
+                  <h3>Malik Shoaib</h3>
+                  <p>Pakistan</p>
+                  <p>
+                    4.8/5
+                    <span class="colored"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                  </p>
+                </div>
+              </div>
+              <div class="review">
+                <p>
+                  Atlas Quest is an outstanding travel planner that exceeded my
+                  expectations with its efficient service and tailored
+                  recommendations. Everything was seamless, and the support team
+                  was incredibly helpful. I'm delighted to give them a 4.8-star
+                  rating for their excellent work! - Malik Shoaib
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+      </section>
+
+    </main>
+
+
+
+    <footer>
+      <div class="links">
+  
+          <div class="left">
+              <h1>Quick Links</h1>
+              <ul class="quickNav">
+                  <li class="qck-item"><a href="../index.html">Home</a></li>
+                  <li class="qck-item"><a href="../destination.html">Destinations</a></li>
+                  <li class="qck-item"><a href="../booking.html">Booking</a></li>
+                  <li class="qck-item"><a href="../about.html">About us</a></li>
+              </ul>
+          </div>
+          <div class="mid">
+              <h1>Contact us via</h1>
+              <ul class="contact-links">
+                  <li class="link-item"><a href="https://wa.me/923421234567"> +92 342 1234567</a></li>
+                  <li class="link-item"><a href="https://wa.me/923216789034"> +92 321 6789034</a></li>
+                  <li class="link-item"><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDZPKppBKtskkJBPrNcXNfJnpdWZZgpmHHHcVkNZmCSMKshtlmJCxWZwDChLbMcffCMmsWM"> customersupport@gmail.atlasquest.com</a></li>
+                  <li class="link-item"><a href="https://maps.app.goo.gl/Yom8m6MFWmpChZ6TA"> Atlas Quest Main Office, Saddar, Karachi</a></li>
+              </ul>
+          </div>
+          <div class="right">
+          <h1>Find us on</h1>
+          <ul class="social-media">
+              <li class="social-item"><a href="https://www.facebook.com/atlasquest">Faceboook</a></li>
+              <li class="social-item"><a href="https://www.instagram.com/zoro_iftikhar/">Instagram</a></li>
+              <li class="social-item"><a href="https://twitter.com/atlasquest">Twitter</a></li>
+              <li class="social-item"><a href="https://linkedin.com/in/atlasquest">Linked In</a></li>
+          </ul>
+      </div>
+  </div>
+      <hr>
+  <div class="bottom">
+      <p>&copy;<span class="colored">Atlas Quest!</span> All rights reserved. Made by <a href="../admin/login.html">Iftikhar & Bros</a>. Since 2024</p>
+  </div>
+  </footer>
+  
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

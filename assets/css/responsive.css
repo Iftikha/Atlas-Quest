@@ -1,0 +1,202 @@
+@media screen and (max-width: 900px) {
+    .aboutSec img{
+        width: 400px;
+    }
+    .aboutSec .aboutText{
+        width: 400px;
+        height: 300px;
+        padding: 15px;
+        h1{
+            font-size: 36px;
+        }
+    }
+    .newsInnerDiv{
+        .Text{
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .barBtn{
+        display: block;
+    }
+    .hideEm{
+        display: none;
+    }
+    footer{
+        padding: 30px;
+    }
+    .links{
+        padding: 10px;
+    }
+    .aboutSec{
+        flex-direction: column;
+        padding: 50px;
+        img{
+            width: 100%;
+        }
+        .aboutText{
+            width: 100%;
+            height: fit-content;
+        }
+        
+    }
+    .newsInnerDiv{
+        padding: 25px;
+        flex-direction: column;
+        gap: 0;
+    }
+    .newsInnerDiv .Text{
+        width: 100%;
+        h1{
+            font-size: 24px;
+        }
+        p{
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+}
+@media screen and(min-width: 769px) {
+    .onPhone{
+        display: none;
+    }
+}
+@media screen and (max-width: 450px) {
+    
+}
+@media screen and (max-width: 350px) {
+    .onPhone{
+        width: 100%;
+    }
+    footer{
+        padding: 20px;
+    }
+}
+@media (max-width: 1024px) {
+    .offerImages {
+        padding: 20px;
+        gap: 20px;
+    }
+    .offerImages .offer {
+        width: 90%;
+        height: 300px;
+    }
+    .offerImages .desc h2 {
+        font-size: 24px;
+        margin-top: 150px;
+    }
+    .offerImages .desc p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .offerSec h1 {
+        font-size: 24px;
+    }
+    .offerSec h1::after {
+        width: 150px;
+    }
+    .offerImages {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .offerImages .offer {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3/2;
+    }
+    .offerImages img {
+        top: 0;
+    }
+    .offerImages .desc h2 {
+        font-size: 20px;
+        margin-top: 100px;
+    }
+    .offerImages .desc p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .offerSec h1 {
+        font-size: 20px;
+    }
+    .offerSec h1::after {
+        width: 100px;
+    }
+    .offerImages .offer {
+        width: 100%;
+        height: auto;
+    }
+    .offerImages .desc {
+        padding: 10%;
+    }
+    .offerImages .desc h2 {
+        font-size: 18px;
+        margin-top: 50px;
+    }
+    .offerImages .desc p {
+        font-size: 14px;
+    }
+    .newsSec{
+        height: 70vh;
+    }
+    .newsInnerDiv{
+        flex-direction: column;
+    }
+    .newsInnerDiv h1{
+        font-size: 30px;
+    }
+    .newsInnerDiv input{
+        width: 100%;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 30px;
+        margin-top: 0;
+    }
+    .newsInnerDiv button{
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        width: 100px;
+    }
+    .newsInnerDiv .form{
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutBody,
+    .contactInfo{
+        margin: 0 20px;
+        h1{
+            font-size: 22px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+    .destHero h1{
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    form{
+        width: 100%;
+    }
+    .bookingHero h1{
+        font-size: 36px;
+    }
+    .bookingHero p{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .bookingSetailsInner{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 550px) {
+    .bookingSetailsInner{
+        flex-direction: column;
+    }
+}
